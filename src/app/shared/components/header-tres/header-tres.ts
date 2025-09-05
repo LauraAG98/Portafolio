@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-header-tres',
@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './header-tres.css'
 })
 export class HeaderTres {
-
+  @Input() titulo:string='';
 }
