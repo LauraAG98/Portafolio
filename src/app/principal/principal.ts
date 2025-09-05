@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
 import { Footer } from '../shared/components/footer/footer';
 import { Nav } from '../shared/components/nav/nav';
+import { HeaderPrincipal } from '../shared/components/header-principal/header-principal';
+
 
 @Component({
   selector: 'app-principal',
-  imports: [Nav,Footer],
+  imports: [Nav,HeaderPrincipal,Footer],
   templateUrl: './principal.html',
   styleUrl: './principal.css'
 })
