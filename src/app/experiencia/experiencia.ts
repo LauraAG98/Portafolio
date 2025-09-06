@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { Nav } from '../shared/components/nav/nav';
 import { Footer } from '../shared/components/footer/footer';
 import { HeaderDos } from '../shared/components/header-dos/header-dos';
@@ -10,5 +10,5 @@ import { HeaderDos } from '../shared/components/header-dos/header-dos';
   styleUrl: './experiencia.css'
 })
 export class Experiencia {
-
+protected readonly escuela = signal("escuela deportiva Agua Azul");
 }
