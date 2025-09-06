@@ -10,5 +10,4 @@ import { HeaderTres } from '../shared/components/header-tres/header-tres';
   styleUrl: './blog.css'
 })
 export class Blog {
-
 }
