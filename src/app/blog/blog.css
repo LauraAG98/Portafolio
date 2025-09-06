@@ -32,7 +32,7 @@ h2{
     align-items: center;
     background-color: rgba(68, 67, 67, 0.171);
     border-radius: 10px;
-    border: 1px solid;
+    border: 2px solid;
     box-shadow: 10px 10px 10px rgba(0,0,0,0.3);
     height: 180px;
     width: 330px;
@@ -44,5 +44,6 @@ h2{
 
 p{
     font-size: 18px;
+    font-style: italic;
     width: 70%;
 }
