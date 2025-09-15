@@ -7,9 +7,17 @@
             <a routerLink="/Portafolio">Portafolio</a>
             <a routerLink="/Blog">Blog</a>
 
-            
-           
+
+
         </div>
-         <button><a id="letraBoton" routerLink="/Contacto">Contacto</a></button>
+        <div id="separacionBoton">
+            <button><a id="letraBoton" routerLink="/Contacto">Contacto</a></button>
+            <button id="botonIdioma" (click)="menuDesplegable()">Idioma</button>
+
+            @if (menuDesplegable()){
+                <p>Español</p>
+                <p>Inglés</p>
+            }
+        </div>
     </div>
 </div>
