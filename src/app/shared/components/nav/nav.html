@@ -12,12 +12,17 @@
         </div>
         <div id="separacionBoton">
             <button><a id="letraBoton" routerLink="/Contacto">Contacto</a></button>
-            <button id="botonIdioma" (click)="menuDesplegable()">Idioma</button>
+            
+            <div id="botones">
+                <button id="botonIdioma" (mouseenter)="toggleElemento()" (mouseleave)="toggleElemento()">Idioma</button>
 
-            @if (menuDesplegable()){
-                <p>Español</p>
-                <p>Inglés</p>
-            }
+                @if (menuDesplegable()){
+                <div id="menu" (mouseenter)="toggleElemento()" (mouseleave)="toggleElemento()">
+                    <p>Español</p>
+                    <p>Inglés</p>
+                </div>
+                }
+            </div>
         </div>
     </div>
 </div>

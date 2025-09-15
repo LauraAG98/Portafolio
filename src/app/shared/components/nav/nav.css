@@ -28,6 +28,7 @@ img{
 #separacionBoton{
     display: flex;
     justify-content: space-evenly;
+    position: relative;
     width: 20%;
 }
 
@@ -63,6 +64,13 @@ a:hover{
     text-decoration: none;
 }
 
+#botones{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
 #botonIdioma{
     cursor: pointer;
     background-color: transparent;
@@ -78,4 +86,27 @@ a:hover{
 #botonIdioma:hover{
     color: black;
     background-color: white;
+}
+
+#menu{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.918);
+    position: absolute;
+    border-radius: 8px;
+    border: 1px black solid;
+    margin-top: 35px;
+    z-index: 10;
+}
+
+p{  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+    font-size: 14.5px;
+    border: 1px black solid;
+    height: 35px;
+    width: 80px;
 }

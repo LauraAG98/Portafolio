@@ -12,6 +12,6 @@ export class Nav {
 
 
   toggleElemento(){
-    this.menuDesplegable.update(valor=>!valor)
+    this.menuDesplegable.update(valor => !valor);
   }
 }
