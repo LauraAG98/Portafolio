@@ -40,3 +40,42 @@ p {
 img {
     width: 450px;
 }
+
+.fondo-experiencia,
+.fondo-portafolio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/assets/images/fondo2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 520px;
+}
+
+.fondo-experiencia #espacioInfo,
+.fondo-portafolio #espacioInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+}
+
+.fondo-experiencia h1, 
+.fondo-portafolio h1 {
+    font-size: 50px;
+    height: 90px;
+    color: rgb(255, 255, 255);
+}
+
+.fondo-experiencia p,
+.fondo-portafolio p {
+    font-size: 30px;
+    width: 460px;
+}
+
+.fondo-experiencia img,
+.fondo-portafolio img {
+    width: 450px;
+}
