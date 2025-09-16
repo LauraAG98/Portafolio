@@ -1,14 +1,13 @@
 import { Component } from '@angular/core';
 import { Nav } from '../shared/components/nav/nav';
 import { Footer } from '../shared/components/footer/footer';
-import { HeaderTres } from '../shared/components/header-tres/header-tres';
+import { HeaderPrincipal } from '../shared/components/header-principal/header-principal';
 
 @Component({
   selector: 'app-contacto',
-  imports: [Nav,HeaderTres,Footer],
+  imports: [Nav,HeaderPrincipal,Footer],
   templateUrl: './contacto.html',
   styleUrl: './contacto.css'
 })
 export class Contacto {
-
 }

@@ -42,7 +42,7 @@ img {
 }
 
 .fondo-experiencia,
-.fondo-portafolio{
+.fondo-portafolio {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,7 +62,7 @@ img {
     width: 75%;
 }
 
-.fondo-experiencia h1, 
+.fondo-experiencia h1,
 .fondo-portafolio h1 {
     font-size: 50px;
     height: 90px;
@@ -77,5 +77,44 @@ img {
 
 .fondo-experiencia img,
 .fondo-portafolio img {
+    width: 450px;
+}
+
+.fondo-blog,
+.fondo-contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/assets/images/fondo3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 520px;
+}
+
+.fondo-blog #espacioInfo,
+.fondo-contacto #espacioInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+}
+
+.fondo-blog h1,
+.fondo-contacto h1 {
+    font-size: 50px;
+    height: 90px;
+    color: rgb(255, 255, 255);
+}
+
+.fondo-blog p,
+.fondo-contacto p {
+    font-size: 30px;
+    width: 460px;
+}
+
+.fondo-blog img,
+.fondo-contacto img {
     width: 450px;
 }
