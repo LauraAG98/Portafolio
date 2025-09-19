@@ -21,6 +21,7 @@ h1{
 }
 
 p{
+    white-space: pre-line;
     font-size: 25px;
 }
 
