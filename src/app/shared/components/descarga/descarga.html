@@ -1,7 +1,16 @@
 <div id="ubicacion">
     <div id="linea"></div>
     <div id="ubicacionBotones">
-        <button>{{'boton1' |translate}}</button>
-        <button>{{'boton2' |translate}}</button>
+
+        @switch(descarga()){
+            @case('es'){
+                <button class="activo" (click)="descargarHV()">{{'boton1' |translate}}</button>
+                <button (click)="descarga.set('en')">{{'boton2' |translate}}</button>
+            }
+            @case('en'){
+                 <button (click)="descarga.set('es')">{{'boton2' |translate}}</button>
+                <button class="activo" (click)="descargarHV()">{{'boton1' |translate}}</button>  
+            }
+        }
     </div>
 </div>

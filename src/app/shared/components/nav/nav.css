@@ -28,7 +28,6 @@ img{
 #separacionBoton{
     display: flex;
     justify-content: space-evenly;
-    position: relative;
     width: 20%;
 }
 
@@ -67,8 +66,9 @@ a:hover{
 #botones{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
+    position: absolute;
+    margin-left: 250px;
 }
 
 #botonIdioma{
@@ -88,12 +88,9 @@ a:hover{
     background-color: white;
 }
 
-#menu{
+menu.activo{
     display: flex;
     flex-direction: column;
-    position: absolute;
-    margin-top: 35px;
-    z-index: 10;
 }
 
 button{  

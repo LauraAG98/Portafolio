@@ -16,8 +16,8 @@
 
                 @if (menuDesplegable()){
                 <div id="menu" (mouseenter)="toggleElemento()" (mouseleave)="toggleElemento()">
-                    <button (click)="cambiarIdioma('es')">{{'español' | translate}}</button>
-                    <button (click)="cambiarIdioma('en')">{{'ingles' | translate}}</button>
+                    <button (click)="cambiarIdioma('es')" [ngStyle]= "cambiarColor('es')">{{'español' | translate}}</button>
+                    <button (click)="cambiarIdioma('en')" [ngStyle]= "cambiarColor('en')">{{'ingles' | translate}}</button>
                 </div>
                 }
             </div>
