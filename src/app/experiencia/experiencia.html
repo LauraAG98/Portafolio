@@ -4,31 +4,26 @@
 [claseFondo]="'fondo-experiencia'"></app-header-principal>
 <section>
     <div class="cuadro">
-        <h2>Escuela de Natación<br> Agua Azul</h2>
+        <h2>{{ 'sub1' | translate }}</h2>
         <img src="assets/images/aguaA.png" alt="">
     </div>
-    <p>Más adelante, continué mi labor en la {{escuela()}}, fortaleciendo mis competencias en
-        enseñanza, acompañamiento y formación integral.</p>
+    <p>{{ 'text' |translate}}</p>
 </section>
 
 <section id="seccion2">
-    <p>Posteriormente, me vinculé a la Fundación Covida, donde apoyé procesos de terapia hídrica, impartí clases de
-        natación y brindé atención al cliente.</p>
+    <p>{{ 'text2' | translate }}</p>
     <div id="cuadro">
-        <h2>Fundación Somos Constructores de Vida <br>COVIDA</h2>
+        <h2>{{ 'sub2' | translate }} <br>COVIDA</h2>
         <img id="img2" src="assets/images/covida.png" alt="">
     </div>
 </section>
 
 <section>
     <div class="cuadro">
-        <h2>Escuelas de formación Deportiva
-            <br> Universidad del Quindío
-        </h2>
+        <h2>{{ 'sub3' | translate}} </h2>
         <img id="img3" src="assets/images/Univers.png" alt="">
     </div>
-    <p>Inicié mi experiencia como instructora de natación en la Universidad del Quindío, dictando clases en las escuelas
-        deportivas para niños.</p>
+    <p>{{ 'text3' | translate }}</p>
 </section>
 <app-descarga></app-descarga>
 <app-footer></app-footer>
