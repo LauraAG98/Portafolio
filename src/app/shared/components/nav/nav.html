@@ -2,24 +2,22 @@
     <div id="espacios">
         <img src="assets/images/logoLAG.png" alt="logo">
         <div id="enlaces">
-            <a routerLink="/Principal">Inicio</a>
-            <a routerLink="/Experiencia">Experiencia Laboral</a>
-            <a routerLink="/Portafolio">Portafolio</a>
-            <a routerLink="/Blog">Blog</a>
-
-
+            <a routerLink="/Principal">{{'inicio' | translate }}</a>
+            <a routerLink="/Experiencia">{{'experiencia' | translate}}</a>
+            <a routerLink="/Portafolio">{{'portafolio' | translate}}</a>
+            <a routerLink="/Blog">{{'blog' | translate}}</a>
 
         </div>
         <div id="separacionBoton">
-            <button><a id="letraBoton" routerLink="/Contacto">Contacto</a></button>
+            <button id="botonContacto"><a id="letraBoton" routerLink="/Contacto">{{'contacto' | translate}}</a></button>
             
             <div id="botones">
-                <button id="botonIdioma" (mouseenter)="toggleElemento()" (mouseleave)="toggleElemento()">Idioma</button>
+                <button id="botonIdioma" (mouseenter)="toggleElemento()" (mouseleave)="toggleElemento()">{{'idioma' | translate}}</button>
 
                 @if (menuDesplegable()){
                 <div id="menu" (mouseenter)="toggleElemento()" (mouseleave)="toggleElemento()">
-                    <p>Español</p>
-                    <p>Inglés</p>
+                    <button (click)="cambiarIdioma('es')">{{'español' | translate}}</button>
+                    <button (click)="cambiarIdioma('en')">{{'ingles' | translate}}</button>
                 </div>
                 }
             </div>
