@@ -1,7 +1,5 @@
 <app-nav></app-nav>
-<app-header-principal
-[titulo]=" 'tituPortHeader' | translate "
-[claseFondo]="'fondo-portafolio'">
+<app-header-principal [titulo]=" 'tituPortHeader' | translate " [claseFondo]="'fondo-portafolio'">
 </app-header-principal>
 <section>
     <div id="texto">
@@ -9,9 +7,33 @@
         <p> {{'texto4' |translate}} </p>
     </div>
     <div class="fade-slider">
-        <div class="slide slide1"> <img src="assets/images/pro1.png" alt=""> </div>
-        <div class="slide slide2"> <img src="assets/images/pro2.png" alt=""> </div>
-        <div class="slide slide3"> <img src="assets/images/pro3.png" alt=""> </div>
+        <button (click)="anterior()">⬅️</button>
+
+        @switch (ubicacion) {
+        @case (0) {
+        <div class="slide">
+            <img [src]="imagenes[0]" alt="">
+        </div>
+        }
+        @case (1) {
+        <div class="slide">
+            <img [src]="imagenes[1]" alt="">
+        </div>
+
+        }
+        @case (2) {
+        <div class="slide">
+            <img [src]="imagenes[2]" alt="">
+        </div>
+        }
+        @default {
+        <div class="slide">
+            <p>No hay imagenes</p>
+        </div>
+        }
+        }
+
+        <button (click)="siguiente()">➡️</button>
     </div>
 </section>
 <app-footer></app-footer>

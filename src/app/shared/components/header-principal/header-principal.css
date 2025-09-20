@@ -2,7 +2,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('/assets/images/fondo.png');
+    background-image: url('https://i.postimg.cc/ZnVK79bC/fondo.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -47,7 +47,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('/assets/images/fondo2.png');
+    background-image: url('https://i.postimg.cc/SN1xcz1P/fondo2.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -86,7 +86,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('/assets/images/fondo3.png');
+    background-image: url('https://i.postimg.cc/s27fFHfF/fondo3.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

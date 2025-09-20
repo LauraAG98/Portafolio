@@ -12,4 +12,24 @@ import { TranslatePipe } from '@ngx-translate/core';
 })
 export class Portafolio {
   protected readonly titulo=signal("Trabajos Realizados");
+
+  imagenes: string[] = [
+    'https://i.postimg.cc/zfX766Fv/pro1.png',
+    'https://i.postimg.cc/5y06M5kw/pro2.png',
+    'https://i.postimg.cc/G374xNHz/pro3.png'
+  ]
+
+  ubicacion:number=0;
+
+  siguiente(){
+    this.ubicacion=(this.ubicacion+1) % this.imagenes.length;
+  }
+
+  anterior(){
+    this.ubicacion=(this.ubicacion-1+this.imagenes.length) % this.imagenes.length;
+  }
+
+  irAPunto(index:number){
+    this.ubicacion = index;
+  }
 }

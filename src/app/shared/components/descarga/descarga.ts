@@ -8,10 +8,8 @@ import { TranslatePipe } from '@ngx-translate/core';
   styleUrl: './descarga.css'
 })
 export class Descarga {
-  protected readonly descarga = signal<'es' | 'en'>('es');
   
-  descargarHV(){
-    const idiom = this.descarga();
+  descargarHV( idiom : 'es' | 'en'){
     const link=
     idiom == 'es'
     ? 'assets/images/Hoja_de_vida_español.pdf'
