@@ -11,4 +11,5 @@ import { TranslatePipe } from '@ngx-translate/core';
   styleUrl: './blog.css'
 })
 export class Blog {
+  frases:string[]=['texto5','texto6','texto7','texto8'];
 }

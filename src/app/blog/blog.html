@@ -6,22 +6,13 @@
 <section>
     <div id="ubicacion">
         <h2>{{ 'sub4' | translate }}</h2>
+    
         <div class="cuadros">
-            <div class="frases">
-                <p>“{{ 'texto5' | translate }}”</p>
+            @for (frase of frases; track $index) {
+                <div class="frases">
+                <p>“{{ frase | translate }}”</p>
             </div>
-            <div class="frases">   
-                <p>“{{ 'texto6' | translate }}”</p>
-            </div>
-        </div>
-
-        <div class="cuadros">
-            <div class="frases">
-                <p>“{{ 'texto7' | translate }}”</p>
-            </div>
-            <div class="frases">
-                <p>“{{ 'texto8' | translate }}”</p>
-            </div>
+            }
         </div>
     </div>
 </section>

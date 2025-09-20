@@ -39,7 +39,7 @@ img{
     width: 100px;
 }
 
-button:hover{
+#botonContacto:hover{
     background-color: white;
 }
 
