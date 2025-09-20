@@ -12,8 +12,8 @@ export class Descarga {
   descargarHV( idiom : 'es' | 'en'){
     const link=
     idiom == 'es'
-    ? 'assets/images/Hoja_de_vida_español.pdf'
-    :'assets/images/Hoja_de_vida_ingles.pdf';
+    ? 'https://drive.google.com/file/d/1BEwSt-0d1ns5a-egsoYAxCFEpFeh3hAu/view?usp=sharing'
+    :'https://drive.google.com/file/d/1glYdSOmGjhYMzboK8aUmecqmcKJAHSrw/view?usp=sharing';
 
     window.open(link,'_blanck')
   }
